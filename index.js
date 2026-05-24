@@ -6,3 +6,8 @@ function greet(name) {
 }
 greet('Alice');
 greet('Bob');
+
+function add(a, b) {
+    return a + b;
+}   
+console.log(`The sum of 5 and 3 is: ${add(5, 3)}`);
