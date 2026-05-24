@@ -23,3 +23,7 @@ function factorial(n) {
 }   
 console.log(`The factorial of 5 is: ${factorial(5)}`);
 
+function multiply(a, b) {
+    return a * b;
+}
+console.log(`The product of 5 and 3 is: ${multiply(5, 3)}`);
