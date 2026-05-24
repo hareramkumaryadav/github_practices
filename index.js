@@ -23,3 +23,14 @@ function factorial(n) {
 }   
 console.log(`The factorial of 5 is: ${factorial(5)}`);
 
+// get super heros nmam\e from api and log it to console
+async function fetchSuperHeroes() {
+    try {
+        const response = await fetch('https://superheroapi.com/api/1234567890/search/a');
+        const data = await response.json();
+        console.log('Super Heroes:', data.results);
+    }   catch (error) { 
+        console.error('Error fetching super heroes:', error);
+    }
+}
+fetchSuperHeroes();
